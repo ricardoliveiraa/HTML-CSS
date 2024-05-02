@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tenta abrir o site em diferentes dispositivos ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-l.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a por audios em sites. A maneira facil mas pouco eficaz</p>
+    <audio src="midia/happy-mistake.mp3" controls ></audio>
+    <p>Ou entao da maneira correta</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.mp3" type="audio/wav">
+        <p>Infelizmente o seu navegador nao consegue reproduzir audio <a href="midia/happy-mistake.mp3" download="happy-mistake.mp3" type="audio/mpeg">Clique aqui para o baixar em MP3</a></p>
+    </audio>
+    <p>Podes por autoplay no parametros em audio</p>
+
+    
+</body>
+</html>
