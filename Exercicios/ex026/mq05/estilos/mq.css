@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*Typical device breakpoints
+extra small : max 600px
+small :       min 600px max 768px
+medium :      min 768px max 992px
+large :       min 992px max 1200px
+extra large : min 1200px
+*/
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 770px;
+    }
+}
